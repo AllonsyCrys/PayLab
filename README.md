@@ -1,9 +1,6 @@
 # Credit Card Validation - Laboratoria
 
-> Este projeto foi desenvolvido como parte do Bootcamp de programação Fron-End LABORATORIA e tem como principal objetivo o aprendizado.
----
-
-O objetivo deste projeto é o estudo dos primeiros conceitos de programação Front-end, com foco em HTML, CSS e javascript, além do sistema de controle de versões GIT e ferramentas como GitHub e a IDE VSCODE.
+> Este projeto foi desenvolvido como parte do Bootcamp de programação Fron-End LABORATORIA e tem como principal objetivo o aprendizado dos primeiros conceitos de programação Front-end, com foco em HTML, CSS e javascript, além do sistema de controle de versões GIT e ferramentas como GitHub e a IDE VSCODE.
 
 ---
 
@@ -25,6 +22,7 @@ O objetivo deste projeto é o estudo dos primeiros conceitos de programação Fr
 
 2. Mostrar a bandeira do cartão
 
+3.
 
 ## UX - Experiência de usuário
 
