@@ -1,6 +1,6 @@
 # Credit Card Validation - Laboratoria
 
-> Este projeto foi desenvolvido como parte do Bootcamp de programação Fron-End LABORATORIA e tem como principal objetivo o aprendizado dos primeiros conceitos de programação Front-end, com foco em HTML, CSS e javascript, além do sistema de controle de versões GIT e ferramentas como GitHub e a IDE VSCODE.
+> Este projeto foi desenvolvido pela estudante Cristyna Becker Costa como parte do Bootcamp de programação Fron-End LABORATORIA e tem como principal objetivo o aprendizado dos primeiros conceitos de programação Front-end, com foco em HTML, CSS e javascript, além do sistema de controle de versões GIT e ferramentas como GitHub e a IDE VSCODE.
 
 ---
 
@@ -24,8 +24,11 @@
 
 3.
 
-## UX - Experiência de usuário
+## UX/UI
 
+- Permitir ao usuário uma experiência de navegação intuitiva através da apresentação de uma interface com a aparência de um cartão de crédito real
+  - Auxiliar o usuário a localizar as informações corretas em seu cartão de crédito
+  -   
 
 
 
