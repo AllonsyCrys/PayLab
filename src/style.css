@@ -1,18 +1,17 @@
 html {
-    background-color: white;
+    background-color: rgb(234, 236, 236);
    
 }
 
 
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: rgb(234, 236, 236);
+    
 }
 
 main {
     display: grid;
-    grid-gap: 1rem;
-   
+    grid-gap: 2vw;
     grid-template-areas: 
    'zero zero'
     'one two'
@@ -20,24 +19,23 @@ main {
    ;
    
    
-   margin-left: 25%;
-   margin-right: 25%;
+   margin-left: 25vw;
+   margin-right: 25vw;
 }
 
 header {
     font-size: 24px;
     text-align: center;
-    margin-left: 15%;
-    margin-right: 15%;
-    padding-top: 40px;
+    margin-left: 15vw;
+    margin-right: 15vh;
+    padding-top: 3vh;
     
 }
 
 .prompt {
     grid-area: zero;
-    
     font-size: 20px;
-    padding: 10px 10px 10px 10px;
+    padding: 2vh 2vw 2vh 2vw;
     background-color: lightgrey;
     border-radius: 2vh;
     max-width: max-content;
@@ -47,12 +45,12 @@ header {
 
 
 .cardFront {
-    background-image: linear-gradient(rgb(177, 89, 199),rgb(64, 34, 71));
+    background-image: linear-gradient(50deg, rgba(36,28,0,1) 0%, rgba(100,94,222,1) 0%, rgba(92,226,252,1) 100%);
     grid-area: three;
-    height: 155px;
-    width: 250px;
+    height: 15vh;
+    width: 25vh;
     border-radius: 1vh;
-    padding: 10px 10px 10px 10px;
+    padding: 2vh 2vw 2vh 2vw;
     
       
     
@@ -61,7 +59,7 @@ header {
 
 
 .cardForm {
-    padding: 20px 0px 20px 30px;
+    padding: 3vh 2vw 3vh 3vw;
     grid-area: one;
     background-color: lightgray;
     border-radius: 3vh;
@@ -70,18 +68,31 @@ header {
     
 }
 
+input {
+    background-color: rgb(240, 240, 240);
+    border: 0px;
+
+}
+
+button {
+    background-color: rgb(240, 240, 240);
+    border: 0px;
+    padding: 1vh 1vh 1vh 1vh;
+
+}
+
 .wallet {
     background-color: lightgray;
     border-radius: 3vh;
     grid-area: two; 
-    padding: 10px 30px 10px 10px;
+    padding: 2vh 2vw 2vh 2vw;
     
       
 }
 
 .walletCard {
-    background-color: aliceblue;
-    padding: 5px 5px 5px 5px;
+    background-color:rgb(240, 240, 240);
+    padding: 1vh 1vw 1vh 1vw;
 
 
 }
@@ -89,15 +100,13 @@ header {
 footer {
  
     height: 100px;
-    margin-top: 100px;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 15vw;
+    margin-right: 15vh;
+    padding-bottom: 3vh;
+    padding-top: 5vh;
     text-align: center;
 }
 
 
   
 
-@media (min width: 40rem) {
-
-}
