@@ -17,28 +17,39 @@ main {
     'one two'
     'one two'
    ;
-   
-   
-   margin-left: 25vw;
-   margin-right: 25vw;
+   grid-template-columns: 1fr 1fr;
+ 
+}
+
+@media (max-width: 480px) {
+    main {
+        grid-template-areas: 
+        'zero' 
+        'one'
+        'one'
+        'two'
+        'two'
+        
+        ;
+    }
 }
 
 header {
-    font-size: 24px;
+    font-size: 2em;
     text-align: center;
-    margin-left: 15vw;
-    margin-right: 15vh;
     padding-top: 3vh;
+
+   
     
 }
 
 .prompt {
     grid-area: zero;
-    font-size: 20px;
+    font-size: 2em;
     padding: 2vh 2vw 2vh 2vw;
     background-color: lightgrey;
     border-radius: 2vh;
-    max-width: max-content;
+    text-align: center;
     
 
 }
@@ -51,15 +62,13 @@ header {
     width: 25vh;
     border-radius: 1vh;
     padding: 2vh 2vw 2vh 2vw;
-    
-      
-    
+    display: grid;
+    align-content: end;
+    line-height: 1.5;
+
 }
-
-
-
 .cardForm {
-    padding: 3vh 2vw 3vh 3vw;
+    padding: 3vh 3vw 3vh 3vw;
     grid-area: one;
     background-color: lightgray;
     border-radius: 3vh;
@@ -71,16 +80,25 @@ header {
 input {
     background-color: rgb(240, 240, 240);
     border: 0px;
+    font-size: 2em;
+    width: 500px;
+    height: 3vh;
+    margin: 1vh 0vw 1vh 0vw;
 
 }
+
+
 
 button {
     background-color: rgb(240, 240, 240);
     border: 0px;
-    padding: 1vh 1vh 1vh 1vh;
+    padding: 1vh 1vw 1vh 1vw;
 
 }
 
+button:hover {
+    background-color: rgb(149, 146, 211);
+}
 .wallet {
     background-color: lightgray;
     border-radius: 3vh;
@@ -94,7 +112,10 @@ button {
     background-color:rgb(240, 240, 240);
     padding: 1vh 1vw 1vh 1vw;
 
+}
 
+.walletCard:hover {
+    background-color: rgb(149, 146, 211);
 }
 
 footer {

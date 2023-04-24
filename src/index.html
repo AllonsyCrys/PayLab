@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html>
+  <script src="index.js"></script>
   <head>
     <meta charset="utf-8">
-    <title>PayLab - Carteira digital</title>
+    <title>PayLab</title>
     <link rel="stylesheet" href="style.css" />
+
   </head>
   
   <body>
     
     <header>
-       <h1>PayLab - Carteira digital</h1>
+       <h1>PayLab</h1>
       <br>
       
     </header>
@@ -22,45 +24,59 @@
         <form>
           
           <div class="userNameArea"> 
-            <label for="nome"> Nome (como está no cartão) </label>
+            <label for="nome"> Nome (como está no cartão) 
             <br>
             <input type="text" id="userNameInput"/>
+            </label>
           </div> 
         <br>
 
           <div class="cardNumberArea"> 
-            <label for="cardNumber" id="cardNumber"> Número do cartão </label>
+            <label> Número do cartão 
             <br>
             <input type="number" placeholder="xxxx xxxx xxxx xxxx" id="cardNumberInput" maxlength="16"/>
+          </label>
           </div> 
         
           <br>
 
           <div class="cardExpiringDateArea"> 
-            <label for="cardExpiringDate"> Validade do cartão </label>
+            <label> Validade do cartão 
             <br>
             <input type="date" id="cardExpiringDateInput"/>
+          </label>
           </div> 
         
           <br>
           
           <div class="userCpfArea"> 
-            <label for="userCPF"> CPF do titular do cartão </label>
+            <label> CPF do titular do cartão 
             <br>
             <input type="text" id="userCPFInput"/>
+          </label>
           </div> 
 
         <br>
           
         <div class="cvvArea"> 
-            <label for="cvv"> CVV/CVC </label>
+            <label> CVV/CVC 
             <br>
             <input type="text" id="cvv"/>
+          </label>
           </div> 
         <br>
-        <section class="cardFront">frente do cartão</section>
+        <section class="cardFront">
+         <div class="cardRepresentation" id="cardNumberRepresentation"><b>XXXX XXXX XXXX XXXX</b></div> 
+         <div class="cardRepresentation" id="cardNameRepresentation">Nome do Titular</div>
+         <div class="cardRepresentation" id="cardExpiringDateRepresentation">xx/xx</div>
+         
+
+          
+          
+          
+        </section>
         <br>
-        <button type="submit" class="confirmButton">Confirmar e adicionar</button>
+        <button type="submit" onclick="confirmationButton()">Confirmar e adicionar</button>
        
      </form>
     </section>
