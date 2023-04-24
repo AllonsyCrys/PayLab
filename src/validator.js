@@ -1,9 +1,55 @@
+
 const validator = {
-// ...
-  
-};
+    
+    isValid() {
+        
+        let cardNumberArray = Array.from(document.getElementById("cardNumberInput").value)
+        
+        let cardNumberArrayInverse= cardNumberArray.reverse()
+
+        function getEvenIndex(item, index) {
+            return index % 2 === 0
+      
+            }
+       
+        let cardNumberArrayEvens = cardNumberArray.filter(getEvenIndex)
+        let cardNumberArrayTimesTwo = cardNumberArrayEvens.map(x => x * 2)
+        
+    
+        //multiplicar por 2
+        //somar os dígitos de itens com mais 2 dígitos
+
+
+
+
+
+
+
+        if (sumOfCardNumberDigits % 10 == 0) {
+            return true
+        } else {
+            return false
+        }
+    }
+
+    maskify() {
+
+    }
+}
 
 export default validator;
+
+
+
+
+
+
+
+
+//validator.isValid(creditCardNumber): creditCardNumber
+//validator.maskify(creditCardNumber): creditCardNumber
+
+
 
 
 
@@ -13,9 +59,8 @@ export default validator;
 // let cardNumber = document.getElementsById("espaçoNoHTMLQueVouCriar").value
 
 // colocar o valor em uma array?
-// na vdd acho que não precisa, só pegar os valores usando manipulação de strings
 
-// let cardNumerArray = Array.from(cardNumber)
+// let cardNumberArray = Array.from(cardNumber)
 
 // dobrar o valor de cada dígito em posição par
 
@@ -27,3 +72,6 @@ export default validator;
 
     // usar o "%" sumOfCardNumberDigits % 10 == 0
 
+
+
+//    let cardNumber = document.getElementById("cardNumberInput").value
