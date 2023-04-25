@@ -3,29 +3,53 @@ const validator = {
     
     isValid() {
         
-        let cardNumberArray = Array.from(document.getElementById("cardNumberInput").value)
+        let cardNumberArrayInput = Array.from(document.getElementById("cardNumberInput").value)
+        cardNumberArrayInput = cardNumberArrayInput.reverse()
         
-        let cardNumberArrayInverse= cardNumberArray.reverse()
-
         function getEvenIndex(item, index) {
             return index % 2 === 0
-      
-            }
-       
-        let cardNumberArrayEvens = cardNumberArray.filter(getEvenIndex)
-        let cardNumberArrayTimesTwo = cardNumberArrayEvens.map(x => x * 2)
+        }  
+        let cardNumberArrayEvens = cardNumberArrayInput.filter(getEvenIndex)
+
+        function getOddIndex(item, index){
+            return index % 2 != 0
+        }
         
-    
-        //multiplicar por 2
-        //somar os dígitos de itens com mais 2 dígitos
+        let cardNumberArrayOdds = cardNumberArrayInput.filter(getOddIndex)
+       
+        let cardNumberArrayEvensTimesTwo = cardNumberArrayEvens.map(x => x * 2)
+
+        function getDoubleDigits(item) {
+            return item > 9
+        }
+
+        function getSingleDigits(item) {
+            return item <= 9
+        }
+
+        let cardNumbersEvensSingleDigits = cardNumberArrayEvensTimesTwo.filter(getSingleDigits)
+
+        let cardNumbersEvensDoubleDigits = cardNumberArrayEvensTimesTwo.filter(getDoubleDigits)
+        
+        let cardNumberNewEvensSingleDigits = cardNumbersEvensDoubleDigits.map(function(item) {
+            return item.toString(10).split('')
+        })
+
+        let cardNumbersNewEvensSingleDigitsSum = cardNumberNewEvensSingleDigits.map (function(item) {
+            return parseInt(item[0]) + parseInt(item[1])
+        })
+
+        
+        let cardNumberFinalArray = cardNumberArrayOdds.concat(cardNumbersEvensSingleDigits, cardNumbersNewEvensSingleDigitsSum)
+         
+        let cardNumberFinalArrayInts = cardNumberFinalArray.map(function(item){
+            return parseInt(item)
+        })
 
 
-
-
-
-
-
-        if (sumOfCardNumberDigits % 10 == 0) {
+        let sumOfCardNumberDigits = cardNumberFinalArrayInts.reduce((sum,a) => sum + a, 0)
+            
+         if (sumOfCardNumberDigits % 10 == 0) {
             return true
         } else {
             return false
