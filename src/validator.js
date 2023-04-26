@@ -1,64 +1,75 @@
-
 const validator = {
+  isValid: function (cardNumber) {
+
+    const cardNumberArrayInput = cardNumber.split('').reverse()
+
+
+    function getEvenIndex(item, index) {
+      return index % 2 === 0
+    }
+    const cardNumberArrayEvens = cardNumberArrayInput.filter(getOddIndex)
+
+    function getOddIndex(item, index) {
+      return index % 2 !== 0
+    }
+
+    const cardNumberArrayOdds = cardNumberArrayInput.filter(getEvenIndex)
+
+    const cardNumberArrayEvensTimesTwo = cardNumberArrayEvens.map(x => x * 2)
+
+    function getDoubleDigits(item) {
+      return item > 9
+    }
+
+    function getSingleDigits(item) {
+      return item <= 9
+    }
+
+    const cardNumbersEvensSingleDigits = cardNumberArrayEvensTimesTwo.filter(getSingleDigits)
+
+    const cardNumbersEvensDoubleDigits = cardNumberArrayEvensTimesTwo.filter(getDoubleDigits)
+
+    const cardNumberNewEvensSingleDigits = cardNumbersEvensDoubleDigits.map(function (item) {
+      return item.toString(10).split('')
+    })
+
+    const cardNumbersNewEvensSingleDigitsSum = cardNumberNewEvensSingleDigits.map(function (item) {
+      return parseInt(item[0]) + parseInt(item[1])
+    })
+
+
+    const cardNumberFinalArray = cardNumberArrayOdds.concat(cardNumbersEvensSingleDigits, cardNumbersNewEvensSingleDigitsSum)
+
+    const cardNumberFinalArrayInts = cardNumberFinalArray.map(function (item) {
+      return parseInt(item)
+    })
+
+
+    const sumOfCardNumberDigits = cardNumberFinalArrayInts.reduce((sum, a) => sum + a, 0)
+
+    if (sumOfCardNumberDigits % 10 === 0) {
+      return true
+    } else {
+      return false
+    }
+  }
+  ,
+  maskify: function (cardNumber) {
+
+    const unmaskedDigits = cardNumber.slice(-4).split('')
+    const maskedDigits = []
+
+    for (let i = 0; i < cardNumber.length - 4; i++) {
+      maskedDigits.push("#")
+    }
+
+    const maskedCardNumber = maskedDigits.concat(unmaskedDigits)
+    return maskedCardNumber.join('') 
     
-    isValid() {
-        
-        let cardNumberArrayInput = Array.from(document.getElementById("cardNumberInput").value)
-        cardNumberArrayInput = cardNumberArrayInput.reverse()
-        
-        function getEvenIndex(item, index) {
-            return index % 2 === 0
-        }  
-        let cardNumberArrayEvens = cardNumberArrayInput.filter(getEvenIndex)
-
-        function getOddIndex(item, index){
-            return index % 2 != 0
-        }
-        
-        let cardNumberArrayOdds = cardNumberArrayInput.filter(getOddIndex)
-       
-        let cardNumberArrayEvensTimesTwo = cardNumberArrayEvens.map(x => x * 2)
-
-        function getDoubleDigits(item) {
-            return item > 9
-        }
-
-        function getSingleDigits(item) {
-            return item <= 9
-        }
-
-        let cardNumbersEvensSingleDigits = cardNumberArrayEvensTimesTwo.filter(getSingleDigits)
-
-        let cardNumbersEvensDoubleDigits = cardNumberArrayEvensTimesTwo.filter(getDoubleDigits)
-        
-        let cardNumberNewEvensSingleDigits = cardNumbersEvensDoubleDigits.map(function(item) {
-            return item.toString(10).split('')
-        })
-
-        let cardNumbersNewEvensSingleDigitsSum = cardNumberNewEvensSingleDigits.map (function(item) {
-            return parseInt(item[0]) + parseInt(item[1])
-        })
-
-        
-        let cardNumberFinalArray = cardNumberArrayOdds.concat(cardNumbersEvensSingleDigits, cardNumbersNewEvensSingleDigitsSum)
-         
-        let cardNumberFinalArrayInts = cardNumberFinalArray.map(function(item){
-            return parseInt(item)
-        })
 
 
-        let sumOfCardNumberDigits = cardNumberFinalArrayInts.reduce((sum,a) => sum + a, 0)
-            
-         if (sumOfCardNumberDigits % 10 == 0) {
-            return true
-        } else {
-            return false
-        }
-    }
+  }
 
-    maskify() {
-
-    }
 }
 
 export default validator;
@@ -70,32 +81,7 @@ export default validator;
 
 
 
-//validator.isValid(creditCardNumber): creditCardNumber
-//validator.maskify(creditCardNumber): creditCardNumber
 
 
 
 
-
-
-// primeiro pegar o valor do input
-
-// let cardNumber = document.getElementsById("espaçoNoHTMLQueVouCriar").value
-
-// colocar o valor em uma array?
-
-// let cardNumberArray = Array.from(cardNumber)
-
-// dobrar o valor de cada dígito em posição par
-
-// se algum resultar em um número com dois dígitos, somar os dígitos
-
-// somar todos os dígitos
-
-// se terminar com zero, é um número de cartão válido
-
-    // usar o "%" sumOfCardNumberDigits % 10 == 0
-
-
-
-//    let cardNumber = document.getElementById("cardNumberInput").value
