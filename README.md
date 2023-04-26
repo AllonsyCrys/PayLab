@@ -21,14 +21,15 @@
 1. Mostrar os dados adicionados pelo usuário em uma interface com a aparência de um cartão de crédito
 
 2. Mostrar a bandeira do cartão
+3. Aumentar a reponsividade da página
 
-3.
 
 ## UX/UI
 
 - Permitir ao usuário uma experiência de navegação intuitiva através da apresentação de uma interface com a aparência de um cartão de crédito real
   - Auxiliar o usuário a localizar as informações corretas em seu cartão de crédito
-  -   
+  - Permitir que o usuário acesse facilmente uma carteira com os cartões préviamente adicionados
+  
 
 
 
