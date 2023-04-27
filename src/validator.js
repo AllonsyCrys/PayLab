@@ -1,51 +1,51 @@
 const validator = {
   isValid: function (cardNumber) {
 
-    const cardNumberArrayInput = cardNumber.split('').reverse()
+    const cardNumberInput = cardNumber.split('').reverse()
 
 
     function getEvenIndex(item, index) {
       return index % 2 === 0
     }
-    const cardNumberArrayEvens = cardNumberArrayInput.filter(getOddIndex)
+    const cardNumberEvens = cardNumberInput.filter(getOddIndex)
 
     function getOddIndex(item, index) {
       return index % 2 !== 0
     }
 
-    const cardNumberArrayOdds = cardNumberArrayInput.filter(getEvenIndex)
+    const cardNumberOdds = cardNumberInput.filter(getEvenIndex)
 
-    const cardNumberArrayEvensTimesTwo = cardNumberArrayEvens.map(x => x * 2)
+    const cardNumberDoubledEvens = cardNumberEvens.map(x => x * 2)
 
-    function getDoubleDigits(item) {
+    function getTwoDigits(item) {
       return item > 9
     }
 
-    function getSingleDigits(item) {
+    function getOneDigits(item) {
       return item <= 9
     }
 
-    const cardNumbersEvensSingleDigits = cardNumberArrayEvensTimesTwo.filter(getSingleDigits)
+    const cardNumbersEvensOneDigits = cardNumberDoubledEvens.filter(getOneDigits)
 
-    const cardNumbersEvensDoubleDigits = cardNumberArrayEvensTimesTwo.filter(getDoubleDigits)
+    const cardNumbersEvensTwoDigits = cardNumberDoubledEvens.filter(getTwoDigits)
 
-    const cardNumberNewEvensSingleDigits = cardNumbersEvensDoubleDigits.map(function (item) {
+    const cardNumberNewOneDigits = cardNumbersEvensTwoDigits.map(function (item) {
       return item.toString(10).split('')
     })
 
-    const cardNumbersNewEvensSingleDigitsSum = cardNumberNewEvensSingleDigits.map(function (item) {
+    const cardNumbersNewOneDigitsSum = cardNumberNewOneDigits.map(function (item) {
       return parseInt(item[0]) + parseInt(item[1])
     })
 
 
-    const cardNumberFinalArray = cardNumberArrayOdds.concat(cardNumbersEvensSingleDigits, cardNumbersNewEvensSingleDigitsSum)
+    const cardNumberFinal = cardNumberOdds.concat(cardNumbersEvensOneDigits, cardNumbersNewOneDigitsSum)
 
-    const cardNumberFinalArrayInts = cardNumberFinalArray.map(function (item) {
+    const cardNumberFinalInts = cardNumberFinal.map(function (item) {
       return parseInt(item)
     })
 
 
-    const sumOfCardNumberDigits = cardNumberFinalArrayInts.reduce((sum, a) => sum + a, 0)
+    const sumOfCardNumberDigits = cardNumberFinalInts.reduce((sum, a) => sum + a, 0)
 
     if (sumOfCardNumberDigits % 10 === 0) {
       return true
