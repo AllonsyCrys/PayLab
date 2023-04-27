@@ -1,30 +1,49 @@
 import validator from './validator.js';
 
+//const cardNumber = document.getElementById('cardNumberInput').value
+/*pega o value do input do número do cartão */
 
-const cardNumber = document.getElementById("cardNumberInput").value
+const cardForm = document.getElementById("cardForm")
+/*coloca o formulário em uma constante */
 
-const cardNumberValidate = validator.isValid(cardNumber)
+cardForm.addEventListener("submit", function (event) {
+  event.preventDefault()
 
-const cardNumberMasked = validator.maskify(cardNumber)
+  const cardNumber = document.getElementById('cardNumberInput').value
+  checkCard(cardNumber)
+  
+})
 
-document.getElementById("sendButton").addEventListener("click", checkCard)
+/*adiciona um event listener do tipo submit, ativando a função com o parâmetro evento, 
+depois, event.preventDefault() faz com que o formulário não seja enviado automáticamente 
+quando a página carrega 
+*/
+let cardCount = 1
 
-function checkCard() {
-
+function checkCard(cardNumber) {
+  const cardNumberValidate = validator.isValid(cardNumber)
+ 
+  
   if (cardNumberValidate === true) {
-    alert("Cartão validado com sucesso")
-    addToWallet()
+    alert('Cartão validado com sucesso')
+
+    if (cardCount === 1) {
+      document.getElementById('walletCardOne').innerHTML = validator.maskify(cardNumber)
+    } else if (cardCount === 2) {
+      document.getElementById('walletCardTwo').innerHTML = validator.maskify(cardNumber)
+    } else if (cardCount === 3) {
+      document.getElementById('walletCardThree').innerHTML = validator.maskify(cardNumber)
+    } else if (cardCount === 4) {
+      document.getElementById('walletCardFour').innerHTML = validator.maskify(cardNumber)
+    } else if (cardCount === 5) {
+      document.getElementById('walletCardFive').innerHTML = validator.maskify(cardNumber)
+    } else if (cardCount >= 6) {
+      alert("Sua carteira está cheia")
+    }
+    cardCount++
   } else if (cardNumberValidate === false) {
-    alert("O númedo de cartão inserido não é válido")
-  } else {
-    alert("Por favor, insira o número do cartão")
-
+    alert('Número de cartão inválido')
   }
-
-}
-
-function addToWallet() {
-  document.getElementById("walletCardOne").innerHTML = cardNumberMasked
 }
 
 
@@ -32,17 +51,3 @@ function addToWallet() {
 
 
 
-
-
-
-
-
-
-// chamar validator.isValid() e validator.maskify().
-//assim validator.isValid(creditCardNumber): creditCardNumber e
-//validator.maskify(creditCardNumber): creditCardNumber
-
-//pra poder chamar um método tem que escrever assim nomeDoObjeto.nomeDoMétodo(ondeAplicar)
-
-
-//const cardNumberArrayInput = Array.from(document.getElementById("cardNumberInput").value).reverse()
