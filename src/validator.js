@@ -64,8 +64,8 @@ const validator = {
     }
 
     const maskedCardNumber = maskedDigits.concat(unmaskedDigits)
-    return maskedCardNumber.join('') 
-    
+    return maskedCardNumber.join('')
+
 
 
   }
