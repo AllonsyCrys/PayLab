@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<script src="index.js" type="module"></script>
+
+<head>
+  <meta charset="utf-8">
+  <title>PayLab</title>
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+
+  <header>
+    <h1>PayLab</h1>
+    <br>
+
+  </header>
+
+  <main>
+
+    <p class="prompt">Por favor, insira os dados do seu cartão para adicioná-lo à sua carteira digital:</p>
+    <section class="cardForm">
+
+      <form action="javascript:void(0);" id="cardForm" >
+
+        <div class="userNameArea">
+          <label for="nome"> Nome (como está no cartão)
+            <br>
+            <input type="text" id="userNameInput">
+          </label>
+        </div>
+        <br>
+
+
+        <label class="cardNumberArea"> Número do cartão
+          <br>
+          <input type="number" placeholder="xxxx xxxx xxxx xxxx" id="cardNumberInput" minlength="13" maxlength="16" required>
+        </label>
+
+        <br>
+
+        <label class="cardExpiringDateArea"> Validade do cartão
+          <br>
+          <input type="text" placeholder="MM/AA" id="cardExpiringDateInput" />
+        </label>
+
+
+        <br>
+
+
+        <label class="userCpfArea"> CPF do titular do cartão
+          <br>
+          <input type="text" id="userCPFInput" />
+        </label>
+
+
+        <br>
+
+
+        <label class="cvvArea"> CVV/CVC
+          <br>
+          <input type="number" id="cvv" />
+        </label>
+
+        <br>
+        
+        <!--
+        <section class="cardFront">
+          <div class="cardRepresentation" id="cardNumberRepresentation"><b>XXXX XXXX XXXX XXXX</b></div>
+          <div class="cardRepresentation" id="cardNameRepresentation">Nome do Titular</div>
+          <div class="cardRepresentation" id="cardExpiringDateRepresentation">xx/xx</div>
+        </section>
+         !-->
+        <br>
+
+        <button type="submit" id="sendButton">Confirmar e adicionar</button>
+
+      </form>
+    </section>
+
+
+
+
+
+
+    <section class="wallet">
+      <h3>Meus cartões:</h3>
+     
+          <div id="walletCardOne">XXXX XXXX XXXX XXXX</div>
+       
+        <br>
+        
+          <div id="walletCardTwo">XXXX XXXX XXXX XXXX</div>
+        
+        <br>
+        
+          <div id="walletCardThree">XXXX XXXX XXXX XXXX</div>
+       
+        <br>
+        
+          <div id="walletCardFour">XXXX XXXX XXXX XXXX</div>
+        
+        <br>
+       
+          <div id="walletCardFive">XXXX XXXX XXXX XXXX</div>
+       
+     
+
+    </section>
+
+
+  </main>
+
+  <footer>Cristyna Costa, 2023 | LABORATORIA </footer>
+
+
+  <script src="index.js" type="module"></script>
+
+</body>
+
+</html>
