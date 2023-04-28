@@ -24,15 +24,15 @@ https://cristynabc.github.io/SAP010-card-validation/
 ---
 ## Experiência de usuário
 
-O usuário PayLab tem como objetivos:
+Os usuários PayLab tem como objetivos:
 
 1. **Segurança**: Os usuários precisam confiar que as informações de seus cartões de crédito e débito estão seguras na PayLab. 
 - A validação automática do número do cartão por meio do algoritmo de Luhn e a simplificação do processo de cadastro podem ajudar a aumentar a segurança do usuário.
 
-2. **Conveniência**: O usuário precisa acessar suas informações de cartões de crédito de maneira rápida e conveniente.
+2. **Conveniência**: Os usuários precisam acessar suas informações de cartões de crédito de maneira rápida e conveniente.
 - A PayLab permite que os usuários tenham acesso rápido e fácil às informações de seus cartões, evitando a necessidade de digitar os números dos cartões sempre que precisarem utilizá-los em uma compra online, por exemplo.
 
-3. **Intuitividade**: O usuário precisa ser capaz de navegar a interface do website.
+3. **Intuitividade**: Os usuários precisa ser capaz de navegar a interface do website.
 A interface simples e intuitiva da PayLab torna a carteira digital acessível a um grupo diverso de usuários, independentemente do nível de conhecimento em tecnologia.
 
 
