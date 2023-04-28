@@ -135,12 +135,13 @@ button:hover {
 
 
 .wallet {
+    
     background-color:rgb(239, 239, 239);
     border-radius: 3vh;
     grid-area: two;
     padding: 2vh 2vw 2vh 2vw;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    font-size: 1.25em;
+    font-size: 2em;
     
 
 }
