@@ -33,7 +33,7 @@ Os usuários PayLab tem como objetivos:
 - A PayLab permite que os usuários tenham acesso rápido e fácil às informações de seus cartões, evitando a necessidade de digitar os números dos cartões sempre que precisarem utilizá-los em uma compra online, por exemplo.
 
 3. **Intuitividade**: Os usuários precisa ser capaz de navegar a interface do website.
-A interface simples e intuitiva da PayLab torna a carteira digital acessível a um grupo diverso de usuários, independentemente do nível de conhecimento em tecnologia.
+- A interface simples e intuitiva da PayLab torna a carteira digital acessível a um grupo diverso de usuários, independentemente do nível de conhecimento em tecnologia.
 
 
 ---
