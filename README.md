@@ -12,7 +12,7 @@ Os objetivos de aprendizado gerais deste projeto foram os seguintes:
 
 # PayLab - Carteira Digital
 
-*A PayLab possui uma interface minimalista e intuitiva, esta simplicidade torna a carteira digital acessível a um grupo diverso de usuários, independentemente do nível de conhecimento em tecnologia.*
+*A PayLab é uma carteira digital com uma interface minimalista e intuitiva, esta simplicidade torna a carteira digital acessível a um grupo diverso de usuários, independentemente do nível de conhecimento em tecnologia.*
 
 ---
 
