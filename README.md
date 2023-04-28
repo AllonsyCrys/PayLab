@@ -29,42 +29,18 @@ O usuário PayLab tem como objetivos:
 1. **Segurança**: Os usuários precisam confiar que as informações de seus cartões de crédito e débito estão seguras na PayLab. 
 - A validação automática do número do cartão por meio do algoritmo de Luhn e a simplificação do processo de cadastro podem ajudar a aumentar a segurança do usuário.
 
-2. **Conveniência**: A PayLab permite que os usuários tenham acesso rápido e fácil às informações de seus cartões, evitando a necessidade de digitar os números dos cartões sempre que precisarem utilizá-los em uma compra online, por exemplo.
+2. **Conveniência**: O usuário precisa acessar suas informações de cartões de crédito de maneira rápida e conveniente.
+- A PayLab permite que os usuários tenham acesso rápido e fácil às informações de seus cartões, evitando a necessidade de digitar os números dos cartões sempre que precisarem utilizá-los em uma compra online, por exemplo.
 
-3. **Intuitividade**: A interface simples e intuitiva da PayLab torna a carteira digital acessível a um grupo diverso de usuários, independentemente do nível de conhecimento em tecnologia.
-
-
-
-
+3. **Intuitividade**: O usuário precisa ser capaz de navegar a interface do website.
+A interface simples e intuitiva da PayLab torna a carteira digital acessível a um grupo diverso de usuários, independentemente do nível de conhecimento em tecnologia.
 
 
-
-
+---
+---
 
 
 
-
-
-
-
-
-
-
-
-## Objetivos principais 
-
-1. Verificar se o número do cartão adicionado é válido através do algoritmo de Luhn
-
-2. Adicionar o cartão à uma interface de carteira virtual
-
-
-## Objetivos secundários
-
-1. Mostrar os dados adicionados pelo usuário em uma interface com a aparência de um cartão de crédito
-
-2. Mostrar a bandeira do cartão adicionado à carteira
-
-3. Ter uma interface responsiva
 
 
 
@@ -73,12 +49,21 @@ O usuário PayLab tem como objetivos:
   
 
 ## Critérios de aceitação do projeto
-- []
-- []
-- []
-- []
-- []
-- []
+1. Interface Que permita ao usuário:
+- [x] Inserir o número que desejamos validar. Use apenas caracteres numéricos (dígitos) no cartão para validar [0-9].
+- [X] Constatar se o resultado é válido ou não.
+- [X] Ocultar todos os dígitos do número do cartão, excetuando os últimos 4 caracteres.
+- [X] Não deve poder inserir um campo vazio.
+2. Testes unitários dos métodos. 
+- [X] Os métodos validator (isValid e maskify) devem ser cobertos por testes unitários.
+3. Código do seu projeto enviado para seu repositório e interface "implantada". 
+- [X] O código final deve estar um repositório no GitHub. A interface, ou página da web, deve ser "implantada" (acessível online publicamente) usando o GitHub Pages.
+4. Um README contendo uma definição de produto.
+- [X] Quem são os principais usuários do produto
+- [X] Quais são os objetivos desses usuários em relação ao seu produto
+- [X] Como você acha que o produto que você está criando está resolvendo seus problemas
+
+
 
 
 
