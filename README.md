@@ -12,9 +12,16 @@ Os objetivos de aprendizado gerais deste projeto foram os seguintes:
 
 # PayLab - Carteira Digital
 
-*A PayLab é uma carteira digital com uma interface minimalista e intuitiva, esta simplicidade torna a carteira digital acessível a um grupo diverso de usuários, independentemente do nível de conhecimento em tecnologia.*
+*A PayLab é uma carteira digital com uma interface minimalista e intuitiva, esta simplicidade a torna acessível a um grupo diverso de usuários, independentemente do nível de conhecimento em tecnologia.*
 
 ---
+**Interface WEB:**
+! [interface WEB] (/home/cristyna/SAP010-card-validation/InterfaceWeb.png)
+
+**Interface Mobile:**
+! [interface Mobile] (/home/cristyna/SAP010-card-validation/Interface Mobile.png)
+
+
 
 O projeto está disponível para acesso pelo GitHub Pages,
 através do Link:
