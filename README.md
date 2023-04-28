@@ -16,10 +16,10 @@ Os objetivos de aprendizado gerais deste projeto foram os seguintes:
 
 ---
 **Interface WEB:**
-! [interface WEB] (/home/cristyna/SAP010-card-validation/InterfaceWeb.png)
+![interface WEB] (/home/cristyna/SAP010-card-validation/InterfaceWeb.png)
 
 **Interface Mobile:**
-! [interface Mobile] (/home/cristyna/SAP010-card-validation/Interface Mobile.png)
+![interface Mobile] (/home/cristyna/SAP010-card-validation/Interface Mobile.png)
 
 
 
