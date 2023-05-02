@@ -31,7 +31,9 @@ Luhn](https://www.101computing.net/wp/wp-content/uploads/Luhn-Algorithm.png)
 
 # PayLab - Carteira Digital
 
-*A PayLab é uma carteira digital com uma interface minimalista e intuitiva, esta simplicidade a torna acessível a um grupo diverso de usuários, independentemente do nível de conhecimento em tecnologia.*
+*A PayLab é uma carteira digital com uma interface minimalista e intuitiva, que realiza a validação e armazenamento do número de cartão de crédito do usuário.
+
+A simplicidade a torna acessível a um grupo diverso de usuários, independentemente do nível de conhecimento em tecnologia.*
 
 ---
 **Interface WEB:**
