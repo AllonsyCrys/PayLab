@@ -10,6 +10,25 @@ Os objetivos de aprendizado gerais deste projeto foram os seguintes:
 4. Implementar controle de versão com git (e a plataforma github)
 ---
 
+
+## 1. Introdução
+
+O [algoritmo de Luhn](https://en.wikipedia.org/wiki/Luhn_algorithm), também
+chamado de módulo 10, é um método de soma de verificação, usado para validar
+números de identificação, como o IMEI de telefones celulares, cartões de crédito
+etc.
+
+Esse algoritmo é simples. Obtemos o inverso do número a ser verificado (que
+contém apenas dígitos [0-9]); todos os números que ocupam uma posição par devem
+ser multiplicados por dois; se esse número for maior ou igual a 10, devemos
+adicionar os dígitos do resultado; o número a verificar será válido se a soma de
+seus dígitos finais for um múltiplo de 10.
+
+![gráfico do algoritmo de
+Luhn](https://www.101computing.net/wp/wp-content/uploads/Luhn-Algorithm.png)
+
+
+
 # PayLab - Carteira Digital
 
 *A PayLab é uma carteira digital com uma interface minimalista e intuitiva, esta simplicidade a torna acessível a um grupo diverso de usuários, independentemente do nível de conhecimento em tecnologia.*
